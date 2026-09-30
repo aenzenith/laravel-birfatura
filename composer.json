@@ -1,0 +1,68 @@
+{
+    "name": "aenzenith/laravel-birfatura",
+    "description": "BirFatura \"Özel Entegrasyon\" (custom integration) server for Laravel: registers the endpoints BirFatura pulls orders from, authenticates its token, and turns typed order data into the exact JSON contract. Laravel 11 through 13, PHP 8.2+.",
+    "keywords": ["laravel", "birfatura", "e-fatura", "e-arsiv", "e-invoice", "invoice", "turkey", "integration"],
+    "license": "MIT",
+    "homepage": "https://github.com/aenzenith/laravel-birfatura",
+    "support": {
+        "issues": "https://github.com/aenzenith/laravel-birfatura/issues",
+        "source": "https://github.com/aenzenith/laravel-birfatura"
+    },
+    "type": "library",
+    "authors": [
+        {
+            "name": "Mustafa Sarı"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "ext-bcmath": "*",
+        "ext-json": "*",
+        "illuminate/console": "^11.0|^12.0|^13.0",
+        "illuminate/contracts": "^11.0|^12.0|^13.0",
+        "illuminate/http": "^11.0|^12.0|^13.0",
+        "illuminate/routing": "^11.0|^12.0|^13.0",
+        "illuminate/support": "^11.0|^12.0|^13.0",
+        "illuminate/validation": "^11.0|^12.0|^13.0",
+        "nesbot/carbon": "^2.72|^3.0"
+    },
+    "require-dev": {
+        "larastan/larastan": "^3.0",
+        "laravel/pint": "^1.18",
+        "orchestra/testbench": "^9.0|^10.0|^11.0",
+        "pestphp/pest": "^3.0|^4.0|^5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Aenzenith\\BirFatura\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Aenzenith\\BirFatura\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Aenzenith\\BirFatura\\BirFaturaServiceProvider"
+            ],
+            "aliases": {
+                "BirFatura": "Aenzenith\\BirFatura\\Facades\\BirFatura"
+            }
+        }
+    },
+    "scripts": {
+        "test": "pest",
+        "format": "pint",
+        "analyse": "phpstan analyse --memory-limit=1G"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

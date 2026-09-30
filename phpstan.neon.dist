@@ -1,0 +1,12 @@
+includes:
+    - vendor/larastan/larastan/extension.neon
+
+parameters:
+    level: 8
+    paths:
+        - src
+    tmpDir: .phpstan.cache
+    ignoreErrors:
+        # Used by the consuming application's tests, not inside the package.
+        - identifier: trait.unused
+          path: src/Testing/MakesBirFaturaRequests.php

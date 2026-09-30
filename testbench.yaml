@@ -1,0 +1,5 @@
+providers:
+  - Aenzenith\BirFatura\BirFaturaServiceProvider
+env:
+  APP_URL: https://shop.test
+  BIRFATURA_TOKEN: 6f1c2a0e-8f5b-4c1e-9a77-2b0d3e4f5a6b
