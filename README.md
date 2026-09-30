@@ -4,11 +4,14 @@
 
 [BirFatura](https://www.birfatura.com/) **Özel Entegrasyon** servisleri için Laravel paketi.
 
-Özel entegrasyonda BirFatura sizin sunucunuzu çağırır: sipariş durumlarını ve ödeme yöntemlerini okur,
-faturalanacak siparişleri tarih aralığıyla çeker, kestiği faturanın bağlantısını ve kargo bilgisini geri
-yazar. Paket bu beş ucu projeye kendisi ekler, `token` başlığını doğrular ve yanıtları
-[resmî sözleşmedeki](https://developers.birfatura.com/dokuman/ozel-entegrasyon-api) alan adlarıyla
-birebir üretir. Uygulamanın işi yalnız veriyi tipli nesnelerle vermek ve geri yazımı karşılamaktır.
+Özel entegrasyonda BirFatura siparişleri sizin sitenizden alır ve faturalarını keser. Kesilen faturanın
+bağlantısını ve kargo bilgisini de sitenize geri gönderir.
+
+Bu paket, BirFatura'nın bağlandığı adresleri Laravel projenize ekler, gelen isteklerin BirFatura'dan
+geldiğini doğrular ve yanıtları
+[resmî dokümandaki](https://developers.birfatura.com/dokuman/ozel-entegrasyon-api) biçimde hazırlar.
+Sizin tarafınızda, siparişlerinizi pakete vermeniz ve geri gönderilen fatura ile kargo bilgisini
+kaydetmeniz yeterlidir.
 
 | Gereksinim | Sürüm |
 | --- | --- |
