@@ -1,6 +1,11 @@
 # Laravel BirFatura
 
+[![Packagist Version](https://img.shields.io/packagist/v/aenzenith/laravel-birfatura)](https://packagist.org/packages/aenzenith/laravel-birfatura)
+[![Total Downloads](https://img.shields.io/packagist/dt/aenzenith/laravel-birfatura)](https://packagist.org/packages/aenzenith/laravel-birfatura/stats)
+[![PHP Version](https://img.shields.io/packagist/dependency-v/aenzenith/laravel-birfatura/php)](https://packagist.org/packages/aenzenith/laravel-birfatura)
+[![Laravel](https://img.shields.io/badge/Laravel-11%20%E2%80%93%2013-FF2D20?logo=laravel&logoColor=white)](https://laravel.com)
 [![Tests](https://github.com/aenzenith/laravel-birfatura/actions/workflows/tests.yml/badge.svg)](https://github.com/aenzenith/laravel-birfatura/actions/workflows/tests.yml)
+[![License](https://img.shields.io/packagist/l/aenzenith/laravel-birfatura)](LICENSE)
 
 [BirFatura](https://www.birfatura.com/) **Özel Entegrasyon** servisleri için Laravel paketi.
 
